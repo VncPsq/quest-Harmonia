@@ -10,6 +10,16 @@ const itemsRouter = require("./items/router");
 
 router.use("/items", itemsRouter);
 
+const { sayWelcome } = require("../../controllers/sayActions");
+
+router.get("/", sayWelcome);
+
+const programsRouter = require("./programs/router");
+
+router.use("/programs", programsRouter);
+
+// ...
+
 /* ************************************************************************* */
 
 module.exports = router;
