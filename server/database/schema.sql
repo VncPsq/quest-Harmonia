@@ -23,6 +23,7 @@ create table program (
   synopsis text not null,
   poster varchar(255) not null,
   country varchar(255) not null,
+  category_id int unsigned not null,
   year int unsigned not null,
-  foreign key(id) references category(id)
+  foreign key(category_id) references category(id)
 );
