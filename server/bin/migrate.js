@@ -1,7 +1,7 @@
 // Load environment variables from .env file
 require("dotenv").config();
 
-const fs = require("node:fs");
+const fs = require("node:fs"); 
 const path = require("node:path");
 
 // Build the path to the schema SQL file
